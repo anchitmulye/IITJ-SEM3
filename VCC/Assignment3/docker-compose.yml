@@ -1,0 +1,15 @@
+version: "3"
+services:
+  server:
+    build: .
+    container_name: server-container
+    ports:
+      - "5000:5000"
+    command: ["python", "server.py"]
+
+  client:
+    build: .
+    container_name: client-container
+    depends_on:
+      - server
+    command: ["python", "client.py"]
