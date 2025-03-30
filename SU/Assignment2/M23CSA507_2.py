@@ -12,7 +12,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import classification_report, confusion_matrix, accuracy_score
 import seaborn as sns
 
-DATASET_PATH = "/Users/anchitmulye/Downloads/Language Detection Dataset"
+DATASET_PATH = "/Users/anchitmulye/Downloads/LanguageDetectionDataset"
 SELECTED_LANGUAGES = ["Hindi", "Marathi", "Gujarati"]
 
 
